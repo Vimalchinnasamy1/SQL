@@ -1,0 +1,17 @@
+CREATE TABLE Products (
+    ProductID INT PRIMARY KEY,
+    ProductName VARCHAR(100),
+    Category VARCHAR(50),
+    Price DECIMAL(10, 2),
+    StockQuantity INT
+);
+INSERT INTO Products (ProductID, ProductName, Category, Price, StockQuantity)
+VALUES
+(1, 'Laptop', 'Electronics', 999.99, 50),
+(2, 'Smartphone', 'Electronics', 499.99, 200),
+(3, 'Desk Chair', 'Furniture', 89.99, 150),
+(4, 'Coffee Maker', 'Appliances', 29.99, 100);
+SELECT * FROM Products;
+SELECT * FROM Products;
+SELECT * FROM Products WHERE Category = 'Electronics';
+SELECT * FROM Products ORDER BY Price DESC;
